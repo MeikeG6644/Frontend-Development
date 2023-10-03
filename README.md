@@ -114,16 +114,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  * Student 1 (Jens)
-    - Video als achtergrond, border om een bepaald stuk
-    
-  * Student 2 (Meike)
+  * Student 1 (Meike)
     - SVG viewport in html en goede svg css
-    
-  * Student 3 (Marelva): 
-    - Plaatjes over elkaar en over hele scherm zetten
-    
-  * Student 4 (Chanté): 
 
   
 
@@ -165,19 +157,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Moet ik mijn css aanpassen? (sommige dingen staan op desktop-first ipv op mobile-first)
     - Bronnen toevoegen
     - Breakdown schets goed (af)maken 
-    
-  * Student 2
-  * Student 3
-  * Student 4
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Werk met meerdere media queries. Zet ze onder het stuk CSS wat je ermee wil veranderen. Anders werkt de media query niet.
+  - Ik heb mijn css aangepast zodat het er iets overzichtelijker uitziet.
+  - Ik heb mijn breakdownschets verbeterd.
 
 </details>
 
@@ -211,21 +198,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  * Student 1 (Meike): 
+    - Hoe maak ik een caroussel voor mijn foto's?
+    - Hamburger menu lukt niet helemaal.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  - Ik heb een filmpje gezocht waar duidelijk in word uitgelegd hoe je een caroussel moet maken.
+  - Ik heb onderzoek gedaan naar een hamburgermenu
+  - Ik heb onderzoek gedaan naar (werkende) searchbars en de javascript. 
+  - Ik heb onderzoek gedaan naar een accordion en de javascript.
 </details>
 
 
@@ -242,15 +226,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  - Ik heb geleerd hoe ik fatsoenlijk met grid en flex kan werken. Ik vond het ook leuk om hiermee te klooien van mobile naar desktop design.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/eindgesprek_display_grid.png" width="375px" alt="top">
+  
+  <img src="readme-images/eindgesprek_display_flex.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  - Het is mij uiteindelijk helaas niet meer gelukt om een werkende hamburgermenu te maken. Hij werkt wel met als mijn scherm een bepaalde grootte   is dat het een afbeelding is of juist tekst, maar als je op de afbeelding klikt opent er niks. Ik heb mijn header een beetje te ingewikkeld       geschrevem waardoor ik hoet moeilijk vond om uiteindelijk het zo te krijgen zoals ik wil.
+  
+    <img src="readme-images/hamburger_1.png" width="375px" alt="bummer">
+  <img src="readme-images/hamburger_2.png" width="375px" alt="bummer">
+  
+  - Ik heb bij mijn productpagina niet goed gekeken naar het verschil in lay-out tussen de mobile versie en de desktop versie. Hierdoor ziet mijn     desktop versie er een beetje raar uit, omdat ik deze niet meer goed kon stylen, maar ik had ook geen tijd meer om opnieuw mijn html en css voor   de pagina te schrijven.
+  
+    <img src="readme-images/layout_1.png" width="375px" alt="bummer">
+  <img src="readme-images/layout_2.png" width="375px" alt="bummer">
+  
+  - Ik hen het voor mezelf best moeilijk gemaakt omdat ik geen duidelijke css heb geschreven (ik heb te laat aanttekeningen toegevoegd), waardoor     het moeilijk was om te bepalen wat nou wat was en ik dingen door elkaar ging zetten.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/slecht_css_1.png" width="375px" alt="bummer">
+  <img src="readme-images/slecht_css_2.png" width="375px" alt="bummer">
 </details>
 
 
