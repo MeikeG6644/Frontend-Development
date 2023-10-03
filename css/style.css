@@ -19,6 +19,8 @@ body {
     box-sizing: 0;
 
     font-family: var(--font-type);
+    
+    background-color: var(--background-color);
 }
 
 
@@ -70,7 +72,7 @@ header section:first-of-type nav article:first-of-type ul li a {
         height: 2em;
 
         margin-left: 1em;
-        
+
         display: none;
     }
 
@@ -1068,13 +1070,13 @@ main {
 .product main > article:nth-of-type(2) section {
     padding: 10px 25px;
     border-radius: 8px;
-    
+
     transition: 1.5s;
 }
 
-.product main > article:nth-of-type(2) section:hover{
+.product main > article:nth-of-type(2) section:hover {
     border: 1px solid var(--black-color);
-        
+
     transition: 1.5s;
 }
 
@@ -1191,5 +1193,23 @@ main {
 
     .product main > article:last-of-type img {
         width: 40%;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --mustard-color: khaki;
+        --white-color: black;
+        --black-color: white;
+        --linda-yellow: orangered;
+        --brown-color: chocolate;
+        --background-color: darkslategrey;
+        --green-color: yellowgreen;
+
+
+
+        --font-type: 'Tahoma', sans-serif;
+        --size: .75em;
     }
 }
