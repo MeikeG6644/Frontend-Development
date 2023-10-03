@@ -179,7 +179,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  
+  * Er wordt nu ook verteld wat voor koppeling.
+  
+  * Geen errors meer en er staat een taal in de lang.
+  
+  * Zegt nu hoeveel items er in de ul staan
+  
+  * Slaat nog steeds wel eens dingen over, maar niet zoveel als eerst.
+  
+  * Sommige buttons zijn soms wat klein (En niet alles is klikbaar, ik ben een paar keer per ongeluk een a vergeten).
+  
+  * Knoppen links en rechts weggehaald.
+  
+  * Alle foto's hebben een alt text (ook al kunnen sommige wel wat beter maar ik ben slecht in omschrijven).
+  
+  * Video's worden nog automatisch en muted afgespeeld maar worden niet genoemd, maar ze voegen ook niet echt iets toe aan de context van de pagina.
+  
+  * Ik heb nog geen focus state, etc.
+  
+  * Ik heb (nog geen) dark/light/high contrast modes.
 </details>
 
 
@@ -263,8 +282,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.svgviewer.dev/svg-to-png (svg to png)
+  2. https://codepen.io/alvarotrigo/pen/MWEJEWG (hamburger menu)
+  3. https://www.youtube.com/watch?v=9hnJsNIBq1g (plaatje in searchbar)
+  4. https://www.youtube.com/watch?v=flItyHiDm7E (hamburger menu)
+  5. https://www.youtube.com/watch?v=dPLHi7tsoFU  (accordion)
+  6. https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/ (searchbar)
+  7. https://stackoverflow.com/questions/75572900/adding-keywords-to-search-bar-in-javascript (searchbar)
+
 
 </details>
