@@ -52,12 +52,6 @@ header section:first-of-type nav article label img {
     margin-left: 1em;
 }
 
-header section:first-of-type nav article label img:last-of-type {
-    display: none;
-}
-
-
-
 header section:first-of-type nav article:first-of-type ul li {
     width: 15em;
 
@@ -76,8 +70,8 @@ header section:first-of-type nav article:first-of-type ul li a {
         height: 2em;
 
         margin-left: 1em;
-
-        display: none
+        
+        display: none;
     }
 
     header section:first-of-type nav article:first-of-type ul {
