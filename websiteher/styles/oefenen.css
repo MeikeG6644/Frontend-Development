@@ -1,0 +1,76 @@
+/* Style for the hamburger menu */
+
+/*section*/
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*section button*/
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+}
+
+
+/*section button span*/
+.menu-button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+/* Style for the open menu items */
+
+/*section div*/
+.menu-items {
+    display: none;
+}
+
+/*section div.active*/
+.menu-items.active {
+    display: block;
+}
+
+/*section div article*/
+.menu-items article {
+    margin: 10px;
+}
+
+
+
+
+
+
+/* Style for the links */
+
+/*section div article a*/
+.menu-items a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* Style for the links on hover */
+
+/*section div article a:hover*/
+.menu-items a:hover {
+    text-decoration: underline;
+}
