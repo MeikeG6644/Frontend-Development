@@ -1,0 +1,1215 @@
+:root {
+    --mustard-color: #BB973F;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --linda-yellow: #E3DC00;
+    --brown-color: #290F02;
+    --background-color: #F7F7F7;
+    --green-color: #666F55;
+
+
+
+    --font-type: 'Tahoma', sans-serif;
+    --size: .75em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+    font-family: var(--font-type);
+    
+    background-color: var(--background-color);
+}
+
+
+h3 {
+    text-align: left;
+    font-weight: 200;
+
+    margin-left: 1em;
+}
+
+/**************************/
+/**********HEADER**********/
+/**************************/
+header {
+    margin: 0;
+    padding: 0;
+}
+
+header > section:first-of-type nav:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Hamburger menu icon */
+header section:first-of-type nav article label img {
+    height: 2em;
+
+    margin-left: 1em;
+}
+
+header section:first-of-type nav article:first-of-type ul li {
+    width: 15em;
+
+    display: none;
+}
+
+header section:first-of-type nav article:first-of-type ul li a {
+    text-decoration: none;
+
+    color: var(--black-color);
+    font-size: .75em;
+}
+
+@media only screen and (min-width: 900px) {
+    header section:first-of-type nav article label img {
+        height: 2em;
+
+        margin-left: 1em;
+
+        display: none;
+    }
+
+    header section:first-of-type nav article:first-of-type ul {
+        display: inline-flex;
+    }
+
+    header section:first-of-type nav article:first-of-type ul li {
+        display: block;
+
+        width: 7vw;
+    }
+
+    header section:first-of-type nav article:first-of-type ul li a {
+        margin-right: .5em;
+    }
+}
+
+
+
+/*Loods 5 logo*/
+header > section nav:first-of-type section:first-of-type h1 img {
+    height: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+/* Profiel, Wishlist, Winkelmandje */
+header > section nav article:last-of-type ul {
+    display: flex;
+    justify-content: space-between
+}
+
+
+header > section nav article ul li img {
+    height: 1em;
+}
+
+header > section nav ul {
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+
+    list-style: none;
+
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+header > section:first-of-type nav:first-of-type article:nth-of-type(2) > ul {
+    width: 5.55em;
+}
+
+header > section:first-of-type nav article:last-of-type ul li:last-of-type a {
+    position: relative;
+    text-decoration: none;
+}
+
+header > section:first-of-type nav article:last-of-type ul li:last-of-type a span {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    transform: translateY(-50%);
+
+    background-color: var(--green-color);
+    color: var(--white-color);
+    font-size: 0.5em;
+    line-height: 1;
+    text-align: center;
+
+    border-radius: 50%;
+
+    height: 10px;
+    width: 10px;
+}
+
+
+/*Searchbar*/
+header section:nth-of-type(2) div {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+header section:nth-of-type(2) div input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px;
+    background: url("images/header/vergrootglas.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 2em;
+}
+
+header section:nth-of-type(2) div button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: .3em;
+    padding-right: 1.5em;
+}
+
+header section:nth-of-type(2) div button img {
+    height: 1.15em;
+}
+
+
+
+
+
+
+
+/* Gekleurde banner header */
+header > section:nth-of-type(3) {
+    margin: 0;
+    margin-top: 1em;
+    padding: 0;
+
+    background-color: var(--mustard-color);
+    color: var(--white-color);
+
+    display: flex;
+    justify-content: space-evenly;
+
+    height: 2.5em;
+
+    text-align: center;
+    align-items: center;
+}
+
+header > section:nth-of-type(3) a {
+    margin: 0;
+    padding: 0;
+
+    color: var(--white-color);
+}
+
+@media only screen and (min-width: 600px) {
+    header > section:nth-of-type(3) {
+        height: 2em;
+    }
+
+    header > section:nth-of-type(3) p,
+    header > section:nth-of-type(3) a {
+        font-size: .75em;
+    }
+}
+
+
+
+
+/* Scroll menu */
+header > section:nth-of-type(4) nav ul {
+    list-style: none;
+
+    display: flex;
+    overflow-x: scroll;
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+header > section:nth-of-type(4) nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: .75em;
+
+    margin: 0;
+    margin-left: 1.5em;
+    padding: 0;
+}
+
+
+/* Foto's scroll menu */
+header > section:nth-of-type(4) nav ul li a img {
+    height: 8.5em;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/**************************/
+/***********MAIN***********/
+/**************************/
+main {
+    margin: 0;
+    padding: 0;
+}
+
+/* Linda banner */
+.home main > article:first-of-type {
+    background-image: url(../images/banners/lindamobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 30em;
+
+    margin-bottom: 3em;
+    margin-top: 3em;
+
+    position: relative;
+}
+
+.home main > article:first-of-type a {
+    text-decoration: none;
+    color: var(--black-color);
+    text-transform: uppercase;
+    line-height: 3;
+    font-family: var(--font-type);
+    font-weight: 500;
+    font-size: var(--size);
+
+    background-color: var(--linda-yellow);
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    height: 3em;
+
+    border-radius: 5px;
+    margin-bottom: 3em;
+
+    transition: .5s;
+}
+
+.home main > article:first-of-type a:hover {
+    color: var(--white-color);
+
+    background-color: var(--black-color);
+
+    transition: .5s;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .home main > article:first-of-type {
+        background-image: url(../images/banners/lindadesktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        height: 30em;
+
+        margin-bottom: 3em;
+        margin-top: 3em;
+
+    }
+}
+
+
+
+
+
+
+/* Video fashion & furniture */
+.home main > article:nth-of-type(2) a {
+    max-height: 25em;
+
+    overflow: hidden;
+
+    margin-bottom: 3em;
+
+    position: relative;
+}
+
+.home main > article:nth-of-type(2) a video {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 600px) {
+    .home main > article:nth-of-type(2) a video {
+        height: 35em;
+    }
+}
+
+.home main > article a {
+    position: relative;
+}
+
+
+.home main > article a section {
+    position: absolute;
+    bottom: 1.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.home main > article a section img {
+    max-width: 360px;
+    width: 100%;
+}
+
+.home main > article a section h2 {
+    color: var(--white-color);
+    font-family: var(--font-type);
+    font-weight: 300;
+    margin-bottom: 1.5em;
+}
+
+.home main > article a section p {
+    color: var(--brown-color);
+    text-transform: uppercase;
+    line-height: 3;
+    font-family: var(--font-type);
+    font-weight: 500;
+    font-size: var(--size);
+
+    background-color: var(--mustard-color);
+
+    border-radius: 5px;
+
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    margin-bottom: 1.5em;
+
+    height: 3em;
+    width: 9em;
+
+    display: inline-block;
+
+    transition: .5s;
+}
+
+.home main > article a section p:hover {
+    color: var(--white-color);
+
+    background-color: var(--black-color);
+
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+/* Meubels op een rij */
+.home main > article:nth-of-type(3) {
+    margin-bottom: 3em;
+}
+
+.home main > article:nth-of-type(3) a {
+    text-decoration: none;
+
+    text-align: center;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.home main > article:nth-of-type(3) > article {
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-between;
+
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.home main > article:nth-of-type(3) > article > article {
+    margin-left: .5em;
+}
+
+.home main > article:nth-of-type(3) > article > article:first-of-type {
+    margin: 0;
+}
+
+.home main > article:nth-of-type(3) > article img {
+    height: 10em;
+}
+
+.home main > article:nth-of-type(3) > article p {
+    text-align: left;
+    font-size: .75em;
+}
+
+.home main > article:nth-of-type(3) > article p:first-of-type {
+    font-weight: 600;
+}
+
+.home main > article:nth-of-type(3) > article p:nth-of-type(2) {
+    font-size: .6em;
+}
+
+
+
+
+
+/* Vazen */
+.home main > section:first-of-type {
+    margin-bottom: 3em;
+}
+
+.home main > section:first-of-type > p {
+    color: var(--black-color);
+    text-align: center;
+
+    font-weight: 600;
+    font-size: .6em;
+    text-transform: uppercase;
+}
+
+.home main > section:first-of-type > h4 {
+    color: var(--black-color);
+    text-align: center;
+
+    font-weight: 200;
+    font-size: 1.25em;
+    margin: 0;
+
+    margin-bottom: 1em;
+}
+
+
+.home main > section:first-of-type article > article:first-of-type img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.home main > section:first-of-type > article > article:nth-of-type(2) {
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-between;
+
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.home main > section:first-of-type article > article:nth-of-type(2) > article {
+    margin-left: .5em;
+
+    width: 12em;
+}
+
+.home main > section:first-of-type article > article:nth-of-type(2) > article:first-of-type {
+    margin: 0;
+}
+
+.home main > section:first-of-type article > article:nth-of-type(2) img {
+    height: 12em;
+    width: auto;
+}
+
+.home main > section:first-of-type article > article:nth-of-type(2) p {
+    text-align: left;
+    font-size: .75em;
+}
+
+.home main > section:first-of-type article > article:nth-of-type(2) p:first-of-type {
+    font-weight: 600;
+}
+
+.home main > section:first-of-type article > article:nth-of-type(2) p:nth-of-type(2) {
+    font-size: .6em;
+}
+
+.home main > section:first-of-type article > article:nth-of-type(2) > article:last-of-type {
+    background-color: var(--brown-color);
+
+    color: var(--white-color);
+
+    width: 4em;
+
+
+}
+
+.home main > section:first-of-type article > article:nth-of-type(2) > article:last-of-type img {
+    height: 2em;
+}
+
+.home main > section:first-of-type article > article:nth-of-type(2) > article:last-of-type p {
+    width: 4em;
+
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .home main > section:first-of-type > article > article:last-of-type {
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: .5em;
+        grid-row-gap: .5em;
+    }
+
+    .home main > section:first-of-type > article > article:last-of-type article {
+        height: 14em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home main > section:first-of-type > article > article:last-of-type article > img {
+        height: 60%;
+    }
+
+    .home main > section:first-of-type > article > article:last-of-type article > p {
+        text-align: left;
+        width: 100%;
+        margin-bottom: .5em;
+    }
+
+    .home main > section:first-of-type > article > article:last-of-type article:last-of-type {
+        padding-left: 31%;
+        padding-right: 31%;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .home main > section:first-of-type > article {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home main > section:first-of-type > article > article:last-of-type {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: .5em;
+        grid-row-gap: .5em;
+    }
+
+    .home main > section:first-of-type > article > article:last-of-type article {
+        height: 14em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: .5em;
+    }
+
+    .home main > section:first-of-type > article > article:last-of-type article > img {
+        height: 60%;
+    }
+
+    .home main > section:first-of-type > article > article:last-of-type article > p {
+        text-align: left;
+        width: 100%;
+        margin-bottom: .5em;
+    }
+
+    .home main > section:first-of-type > article > article:last-of-type article:last-of-type {
+        padding-left: 31%;
+        padding-right: 31%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Merken */
+.home main > section:nth-of-type(2) article {
+    display: flex;
+    overflow-x: scroll;
+
+    margin-bottom: 3em;
+}
+
+.home main > section:nth-of-type(2) article img {
+    height: 6.5em;
+
+    margin: 0;
+    padding: 0;
+}
+
+.home main > section:nth-of-type(2) h3 {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Vacatures Stylist Najaarstrends */
+.home main > article:nth-of-type(4) {
+    display: flex;
+    overflow-x: scroll;
+
+    margin-bottom: 3em;
+}
+
+.home main > article:nth-of-type(4) section {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.home main > article:nth-of-type(4) section p {
+    font-size: .6em;
+    font-weight: 600;
+}
+
+.home main > article:nth-of-type(4) section h3 {
+    margin: 0;
+    margin-bottom: .75em;
+}
+
+.home main > article:nth-of-type(4) section a video {
+    height: 18em;
+}
+
+.home main > article:nth-of-type(4) section a img {
+    height: 18em;
+}
+
+@media only screen and (min-width: 600px) {
+    .home main > article:nth-of-type(4) {
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+/* Nieuw en Sale banner  */
+.home main > article:nth-of-type(5) article a {
+    position: relative;
+    display: inline-block;
+
+    margin-bottom: 3em;
+}
+
+
+.home main > article:nth-of-type(5) article p {
+    text-decoration: none;
+    color: var(--black-color);
+    text-transform: uppercase;
+    font-family: var(--font-type);
+    font-weight: 600;
+    font-size: .6em;
+    line-height: 3;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+    height: 3em;
+
+    border-radius: 5px;
+    border: 2px solid var(--black-color);
+    margin-bottom: 1.5em;
+
+    transition: .5s;
+}
+
+.home main > article:nth-of-type(5) article img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.home main > article:nth-of-type(5) article:hover p {
+    color: var(--white-color);
+    background-color: var(--black-color);
+
+    transition: .5s;
+}
+
+
+.home main > article:nth-of-type(5) > article:last-of-type a {
+    margin: 0;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .home main > article:nth-of-type(5) {
+        display: flex;
+
+        width: 75vw;
+
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+
+    .home main > article:nth-of-type(5) article:first-of-type {
+        margin-right: 3em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************/
+/***********PRODUCTPAGINA***********/
+/***********************************/
+
+
+/*DEZELFDE HEADER*/
+
+/**************************/
+/***********MAIN***********/
+/**************************/
+
+
+.product main > article:first-of-type > article:first-of-type > article:first-of-type {
+    display: flex;
+
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    border: 1px solid black;
+}
+
+.product main > article:first-of-type > article:first-of-type > article:first-of-type > article:first-of-type a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: .6em;
+
+    border: 0.1px solid black;
+    padding-right: 1.5em;
+    margin-right: 1em;
+}
+
+.product main > article:first-of-type > article:first-of-type > article:first-of-type > article:last-of-type p {
+    color: var(--black-color);
+    font-size: .6em;
+}
+
+.product main > article:first-of-type > article:first-of-type > article:first-of-type > article:first-of-type a img {
+    height: 2em;
+}
+
+
+
+
+/*Caroussel*/
+.product main > article:first-of-type > article:first-of-type > article:last-of-type {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.product main > article:first-of-type > article:first-of-type > article:last-of-type article:last-of-type {
+    text-align: center;
+}
+
+.product main > article:first-of-type > article:first-of-type > article:last-of-type article:last-of-type img:last-of-type {
+    margin-left: 4em;
+}
+
+/* Style for the carousel items (images) */
+.product main > article:first-of-type > article:first-of-type > article:last-of-type article:first-of-type img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 500px;
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+    margin: 0;
+}
+
+.product main > article:first-of-type > article:first-of-type > article:last-of-type article:last-of-type {
+    margin-top: 4em;
+}
+
+.product main > article:first-of-type > article:first-of-type > article:last-of-type article:last-of-type img {
+    height: 2em;
+    margin: 0em;
+}
+
+@media screen and (min-width: 600px) {
+    .product main > article:first-of-type > article:first-of-type > article:last-of-type {
+        margin: 0 auto;
+        /* Center the carousel horizontally */
+        max-width: 600px;
+        /* Limit the width of the carousel */
+    }
+}
+
+
+
+
+/*Basis informatie*/
+.product main > article:first-of-type > section:first-of-type {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 3em;
+}
+
+.product main > article:first-of-type > section:first-of-type a {
+    text-decoration-color: lightgrey;
+
+    color: var(--black-color);
+    font-size: .75em;
+}
+
+.product main > article:first-of-type > section:first-of-type h1 {
+    font-weight: 300;
+    font-size: 1.25em;
+}
+
+.product main > article:first-of-type > section:first-of-type p {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+
+
+
+/*Winkelwagen button*/
+.product main > article:first-of-type > article:nth-of-type(2) {
+    background-color: var(--green-color);
+
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .75em;
+    font-weight: 600;
+    color: var(--white-color);
+
+    padding: 5px 25px 5px 25px;
+    border-radius: 10px;
+
+    transition: .5s;
+}
+
+.product main > article:first-of-type > article:nth-of-type(2):hover {
+    background-color: var(--black-color);
+
+    transition: .5s;
+}
+
+
+
+/*Sub informatie*/
+.product main > article:first-of-type > article:nth-of-type(3) {
+    font-size: .75em;
+
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 3em;
+
+}
+
+@media screen and (min-width: 600px) {
+    .product main > article:first-of-type > article:nth-of-type(2) {
+        width: 40%;
+    }
+}
+
+
+
+
+
+/*Kenmerken*/
+.product main > article:first-of-type > section:nth-of-type(2) {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 3em;
+}
+
+.product main > article:first-of-type > section:nth-of-type(2) h2 {
+    font-size: .9em;
+}
+
+.product main > article:first-of-type > section:nth-of-type(2) ul {
+    list-style-type: circle;
+
+}
+
+.product main > article:first-of-type > section:nth-of-type(2) ul li p {
+    margin: .5em;
+    font-size: .9em;
+}
+
+
+
+
+
+
+
+
+
+/*Omschrijving*/
+.product main > section:first-of-type {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 3em;
+}
+
+.product main > section:first-of-type h2 {
+    font-size: .9em;
+}
+
+.product main > section:first-of-type p {
+    margin-bottom: 1em;
+    font-size: .9em;
+}
+
+.product main > section:first-of-type a {
+    text-decoration-color: lightgrey;
+
+    color: var(--black-color);
+    font-size: .9em;
+}
+
+
+
+
+
+
+/*Specificaties en Afmetingen*/
+.product main > article:nth-of-type(2) {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 3em;
+}
+
+.product main > article:nth-of-type(2) section {
+    padding: 10px 25px;
+    border-radius: 8px;
+
+    transition: 1.5s;
+}
+
+.product main > article:nth-of-type(2) section:hover {
+    border: 1px solid var(--black-color);
+
+    transition: 1.5s;
+}
+
+.product main > article:nth-of-type(2) h2 {
+    font-size: .9em;
+}
+
+.product main > article:nth-of-type(2) li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion {
+    max-width: 97%;
+
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 3em;
+}
+
+.contentbox {
+    width: 20em;
+}
+
+.accordion .contentbox {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion .contentbox .label {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.accordion .contentbox .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentbox.active .label::before {
+    content: '-';
+}
+
+.accordion .contentbox .content {
+    position: relative;
+    padding: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+
+.accordion .contentbox.active .content {
+    height: 150px;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    .product main > article:nth-of-type(2) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contentbox {
+        width: 30em;
+    }
+
+}
+
+
+
+
+
+
+/*Laatste info*/
+.product main > article:last-of-type img {
+    height: 25em;
+    width: 100%;
+}
+
+.product main > article:last-of-type section {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.product main > article:last-of-type section h2 {
+    font-size: .9em;
+}
+
+
+
+.product main > article:last-of-type section p {
+    font-size: .em;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .product main > article:last-of-type {
+        display: flex;
+    }
+
+    .product main > article:last-of-type section {
+        width: 35%;
+        margin-left: 8em;
+        margin-top: 4em;
+        margin-bottom: 0;
+    }
+
+    .product main > article:last-of-type img {
+        width: 40%;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --mustard-color: khaki;
+        --white-color: black;
+        --black-color: white;
+        --linda-yellow: orangered;
+        --brown-color: chocolate;
+        --background-color: darkslategrey;
+        --green-color: yellowgreen;
+
+
+
+        --font-type: 'Tahoma', sans-serif;
+        --size: .75em;
+    }
+}
