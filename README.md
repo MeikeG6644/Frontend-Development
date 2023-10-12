@@ -1,4 +1,4 @@
-<img src="readme-images/frontend_development.png" width="100%" alt="Frontend_Development">
+<img src="readme-images/frontend_development.png" width="375px" alt="Frontend_Development">
 
 # Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
