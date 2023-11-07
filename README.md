@@ -284,13 +284,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. https://www.svgviewer.dev/svg-to-png (svg to png)
-  2. https://codepen.io/alvarotrigo/pen/MWEJEWG (hamburger menu)
-  3. https://www.youtube.com/watch?v=9hnJsNIBq1g (plaatje in searchbar)
-  4. https://www.youtube.com/watch?v=flItyHiDm7E (hamburger menu)
-  5. https://www.youtube.com/watch?v=dPLHi7tsoFU  (accordion)
-  6. https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/ (searchbar)
-  7. https://stackoverflow.com/questions/75572900/adding-keywords-to-search-bar-in-javascript (searchbar)
+1.	https://www.youtube.com/watch?v=9hnJsNIBq1g&t=41s      searchbar
+2.	https://chat.openai.com/c/d468aaf2-c1c4-4ad3-81f3-7e0e33b801b4   display grid header nav
+3.	https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp     overlay nav
+4.	https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile    Schermformaten
+5.	https://codepen.io/thetallweeks/pen/AqZMbq?editors=1100     Smooth transition wisselen scherm
+6.	https://ahrefs.com/writing-tools/img-alt-text-generator      Alt tekst omschrijver
+7.	https://www.w3schools.com/cssref/pr_text_letter-spacing.php      Letterspacing
+8.	https://codepen.io/shooft/pen/eYbmRLZ (hamburger menu/header)
+9.	https://developer.mozilla.org/en-US/docs/Web/CSS/:active (::active)
+
 
 
 </details>
