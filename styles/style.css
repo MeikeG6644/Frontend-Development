@@ -121,7 +121,7 @@ header nav {
 
     align-items: center;
 
-    margin: 0 .2em 1.5em .2em;
+    margin: 0 .5em 1.5em .5em;
 }
 
 /* Images in de nav zwart */
@@ -1282,7 +1282,7 @@ header > section:last-of-type article a p {
     gap: 2em;
 
     border: .5px solid var(--color-text);
-    background-color: var(--text-color-header);
+    background-color: var(--color-background);
 
     margin-bottom: 3em;
 }
@@ -2050,8 +2050,13 @@ header > section:last-of-type article a p {
 
 @media (prefers-color-scheme:dark) {
     :root {
-        --color-text: #E7E7E7;
-        --color-background: #272727;
+    --color-text: #EDEDED;
+    --color-background: #121212;
+    --color-header: #BB973F;
+    --text-color-header: #FFFFFF;
+    --color-linda: #E3DC00;
+    --color-vaas: #290F02;
+    --color-shopping: #666F55;
     }
 
     header nav img:first-child {
