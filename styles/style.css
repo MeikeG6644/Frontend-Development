@@ -261,6 +261,7 @@ header nav section:nth-of-type(3) form input {
     border: none;
     outline: none;
     background-color: transparent;
+    color: var(--color-text);
 
     width: 100%;
 }
