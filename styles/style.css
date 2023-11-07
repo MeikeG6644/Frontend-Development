@@ -2050,13 +2050,13 @@ header > section:last-of-type article a p {
 
 @media (prefers-color-scheme:dark) {
     :root {
-    --color-text: #EDEDED;
-    --color-background: #121212;
-    --color-header: #BB973F;
-    --text-color-header: #FFFFFF;
-    --color-linda: #E3DC00;
-    --color-vaas: #290F02;
-    --color-shopping: #666F55;
+        --color-text: #EDEDED;
+        --color-background: #121212;
+        --color-header: #BB973F;
+        --text-color-header: #FFFFFF;
+        --color-linda: #E3DC00;
+        --color-vaas: #290F02;
+        --color-shopping: #666F55;
     }
 
     header nav img:first-child {
