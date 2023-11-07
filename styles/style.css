@@ -323,13 +323,12 @@ header > section:first-of-type {
     height: 2em;
 
     background-color: var(--color-header);
+    color: var(--text-color-header);
 
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
-
-    color: var(--text-color-header);
 }
 
 header > section:first-of-type p {
@@ -416,6 +415,15 @@ header > section:last-of-type article a p {
     transform: translateX(-50%);
 
     margin-bottom: 2.5em;
+
+    transition: .25s ease-in;
+}
+
+.home main > section:first-of-type a p:hover {
+    background-color: #B2AB00;
+    color: #F2F2F2;
+
+    transition: .25s ease-in;
 }
 
 
@@ -478,6 +486,15 @@ header > section:last-of-type article a p {
 
     margin: 0;
     margin-top: 2.5em;
+
+    transition: .25s ease-in;
+}
+
+.home main > section:nth-of-type(2) a article p:hover {
+    color: #F2F2F2;
+    background-color: #A4872E;
+
+    transition: .25s ease-in;
 }
 
 
@@ -620,6 +637,14 @@ header > section:last-of-type article a p {
 
 .home main > section:nth-of-type(4) > article > section:last-of-type article:last-of-type {
     background-color: var(--color-vaas);
+
+    transition: .25s ease-in;
+}
+
+.home main > section:nth-of-type(4) > article > section:last-of-type article:last-of-type:hover {
+    background-color: #1A0701;
+
+    transition: .25s ease-in;
 }
 
 .home main > section:nth-of-type(4) > article > section:last-of-type article:last-of-type a img {
@@ -754,6 +779,15 @@ header > section:last-of-type article a p {
     text-transform: uppercase;
     font-weight: 600;
     font-size: .6em;
+
+    transition: .25s ease-in;
+}
+
+.home main > section:last-of-type > article p:hover {
+    color: #F2F2F2;
+    border: 2px solid #F2F2F2;
+
+    transition: .25s ease-in;
 }
 
 
@@ -1423,6 +1457,14 @@ header > section:last-of-type article a p {
     font-size: .75em;
     text-align: center;
     letter-spacing: 0.1em;
+
+    transition: .25s ease-in;
+}
+
+.product main > div > section:last-of-type > article:nth-of-type(2):hover {
+    background-color: #494F36;
+
+    transition: .25s ease-in;
 }
 
 
@@ -1753,6 +1795,16 @@ header > section:last-of-type article a p {
     text-align: center;
 
     margin-top: 2em;
+
+    transition: .25s ease-in;
+}
+
+.product main > section:last-of-type > article a p:hover {
+    background-color: #121212;
+    color: #FCFCFC;
+    border: .1px solid #121212;
+
+    transition: .25s ease-in;
 }
 
 
@@ -1850,6 +1902,15 @@ header > section:last-of-type article a p {
 
 
 
+    /* Winkelmandje */
+
+    .product main > div > section:last-of-type > article:nth-of-type(2) {
+        width: 30em;
+    }
+
+
+
+
 
 
 
@@ -1933,6 +1994,15 @@ header > section:last-of-type article a p {
 
 
 
+    /* Winkelmandje */
+
+    .product main > div > section:last-of-type > article:nth-of-type(2) {
+        width: 30em;
+    }
+
+
+
+
 
     /* Caroussel */
 
@@ -1988,7 +2058,11 @@ header > section:last-of-type article a p {
     .product main > section:nth-of-type(2) > article:nth-of-type(2) ul li {
         display: block;
         border-bottom: 1px solid #A9A9A9;
+
+        display: flex;
+        justify-content: space-evenly;
     }
+
 
 
 
@@ -2007,6 +2081,51 @@ header > section:last-of-type article a p {
     .product main > section:nth-of-type(2) > article:last-of-type ul li {
         display: block;
         border-bottom: 1px solid #A9A9A9;
+
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* Foto en Info */
+
+    .product main > section:last-of-type {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .product main > section:last-of-type img {
+        height: 28em;
+        width: auto;
+    }
+
+    .product main > section:last-of-type article {
+        margin-left: 5em;
+
+        width: 38em;
+
+        font-size: .85em;
+        margin-bottom: 0;
+    }
+
+    .product main > section:last-of-type article > p {
+        margin-bottom: 5.5em;
+    }
+
+    .product main > section:last-of-type article > p br:first-of-type {
+        display: none;
     }
 }
 
