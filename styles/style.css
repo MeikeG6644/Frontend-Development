@@ -111,89 +111,93 @@ p {
 
 header {
     background-color: var(--color-background);
-}
 
-header nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: .5em;
+    grid-template-rows: auto auto auto auto;
 
-    align-items: center;
-
-    margin: 0 .5em 1.5em .5em;
+    margin: 0;
+    padding: 0;
 }
 
-/* Images in de nav zwart */
+header section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-header nav img:first-child {
+header img:first-of-type {
     display: block;
 }
 
-/* Images in de nav wit */
-header nav img:last-child {
+header img:last-of-type {
     display: none;
 }
 
 
 
 
-/* Loods5 Logo */
+/*Loods 5 Logo*/
 
-header nav section:first-of-type {
+header > section:first-of-type {
     grid-column: 2;
     grid-row: 1;
 
-    display: flex;
-    justify-content: center;
+    height: 5em;
 }
 
-header nav section:first-of-type a img {
-    height: 2em;
+header > section:first-of-type img {
+    height: 1.75em;
 }
 
 
 
 
-/* Hamburger menu */
+/*Hamburger menu*/
 
-header nav section:nth-of-type(2) button {
+header nav {
     grid-column: 1;
     grid-row: 1;
 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header nav button {
     background: none;
     border: none;
     padding: 10px;
     outline: none;
+
 }
 
-header nav section:nth-of-type(2) button span {
+header nav button span {
     display: block;
     width: 25px;
     height: 3px;
     background-color: var(--color-text);
     margin: 5px 0;
     transition: 0.5s;
+
 }
 
-header nav section:nth-of-type(2) ul {
+header nav ul {
     display: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-header nav section:nth-of-type(2) ul li {
-    margin: 10px
+header nav ul li {
+    margin: 10px;
 }
 
-/* Hamburger linkjes */
-
-header nav section:nth-of-type(2) ul li a {
+header nav ul li a {
     font-size: .75em;
 }
 
-header nav section:nth-of-type(2) ul li a:hover {
+header nav ul li a:hover {
     text-decoration: underline;
     text-decoration-color: var(--color-text);
 }
@@ -203,48 +207,38 @@ header nav section:nth-of-type(2) ul li a:hover {
 
 /* Open Hamburger menu */
 
-header nav.active {
-    display: block;
+header nav.active ul {
+   display: block;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-background); /* Set your background color */
+    transform: translateX(0); /* Slide in from the left */
+    transition: transform 0.5s;
+
+
 }
 
-header nav.active section:first-of-type {
-    display: none
-}
-
-header nav.active section:nth-of-type(2) ul {
-    display: contents;
-
-    text-align: left;
-
-    margin-bottom: 2em;
-}
-
-header nav.active section:nth-of-type(2) ul li {
-    border-bottom: 1px solid #A9A9A9;
-
-    padding-left: 1.5em;
-    padding-bottom: .5em;
-}
-
-header nav.active section:last-of-type {
-    display: none
-}
-
+/*Einde nav*/
 
 
 
 
 /* Zoekbalk */
 
-header nav section:nth-of-type(3) {
+header > section:nth-of-type(2) {
     grid-column: span 3;
     grid-row: 2;
 
     display: flex;
     justify-content: center;
+
+    margin-bottom: 1.5em;
 }
 
-header nav section:nth-of-type(3) form {
+header > section:nth-of-type(2) form {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -257,7 +251,7 @@ header nav section:nth-of-type(3) form {
     max-width: 350px;
 }
 
-header nav section:nth-of-type(3) form input {
+header > section:nth-of-type(2) form input {
     border: none;
     outline: none;
     background-color: transparent;
@@ -266,12 +260,12 @@ header nav section:nth-of-type(3) form input {
     width: 100%;
 }
 
-header nav section:nth-of-type(3) form button {
+header > section:nth-of-type(2) form button {
     border: none;
     background-color: transparent;
 }
 
-header nav section:nth-of-type(3) form button img {
+header > section:nth-of-type(2) form button img {
     height: 1.5em;
 }
 
@@ -280,7 +274,7 @@ header nav section:nth-of-type(3) form button img {
 
 /* Profiel, wishlist, shoppingbag */
 
-header nav section:last-of-type {
+header > section:nth-of-type(3) {
     grid-column: 3;
     grid-row: 1;
 
@@ -291,15 +285,15 @@ header nav section:last-of-type {
     margin-left: 2em;
 }
 
-header nav section:last-of-type a img {
+header > section:nth-of-type(3) a img {
     height: 1.25em;
 }
 
-header nav section:last-of-type a:last-of-type {
+header > section:nth-of-type(3) a:last-of-type {
     position: relative;
 }
 
-header nav section:last-of-type a:last-of-type span {
+header > section:nth-of-type(3) a:last-of-type span {
     background-color: var(--color-shopping);
     color: var(--color-background);
     font-size: .5em;
@@ -312,14 +306,15 @@ header nav section:last-of-type a:last-of-type span {
     left: 65%;
 }
 
-/*Einde nav*/
-
 
 
 
 /*Header gekleurde balk*/
 
-header > section:first-of-type {
+header > section:nth-of-type(4) {
+    grid-column: span 3;
+    grid-row: 3;
+
     height: 2em;
 
     background-color: var(--color-header);
@@ -329,13 +324,15 @@ header > section:first-of-type {
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
+
+    margin: 0;
 }
 
-header > section:first-of-type p {
+header > section:nth-of-type(4) p {
     font-size: .75em;
 }
 
-header > section:first-of-type a {
+header > section:nth-of-type(4) a {
     text-decoration: underline;
     text-transform: uppercase;
     font-size: .7em;
@@ -345,11 +342,19 @@ header > section:first-of-type a {
 }
 
 
+.product header > section:nth-of-type(4) {
+    display: none;
+}
+
+
 
 
 /*Header scroll meubels*/
 
 header > section:last-of-type {
+    grid-row: 4;
+    grid-column: span 3;
+
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
@@ -362,12 +367,25 @@ header > section:last-of-type {
 
 header > section:last-of-type article a img {
     height: 5em;
+
+    display: block;
 }
 
-header > section:last-of-type article a p {
+.home header > section:last-of-type article a p {
     text-align: center;
     font-size: .75em;
 }
+
+
+.product header > section:last-of-type {
+    display: none;
+}
+
+
+
+
+
+
 
 
 
@@ -797,9 +815,10 @@ header > section:last-of-type article a p {
 
 
 
-
+/***************************/
 /***************************/
 /* MEDIA QUERY SCREEN SIZES*/
+/***************************/
 /***************************/
 
 /* Voor Tablets en iPads */
@@ -810,57 +829,54 @@ header > section:last-of-type article a p {
         margin-bottom: 7em;
     }
 
-    /* Hamburger menu */
+    header {
+        background-color: var(--color-background);
 
-    header nav section:nth-of-type(2) {
-        margin-left: .5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-row-gap: 1.5em;
     }
+
+    header section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img:first-of-type {
+        display: block;
+    }
+
+    header img:last-of-type {
+        display: none;
+    }
+
+
+
 
     /* Zoekbalk */
 
-    header nav section:nth-of-type(3) form {
-        width: 100%;
-        max-width: 700px;
+    header > section:nth-of-type(2) {
+        margin-bottom: 0;
     }
+
+    header > section:nth-of-type(2) form {
+        max-width: 650px;
+    }
+
 
 
 
     /* Profiel, wishlist, shoppingbag */
 
-    header nav section:last-of-type {
-        grid-column: 3;
-        grid-row: 1;
-
+    header > section:nth-of-type(3) {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
-        margin-left: 10em;
-    }
+        width: 100%;
 
-    header nav section:last-of-type a img {
-        height: 1.25em;
-    }
-
-    /*Header scroll meubels*/
-
-    header > section:last-of-type {
-        display: flex;
-        overflow-x: scroll;
-        scroll-behavior: smooth;
-        gap: 1em;
-
-        margin: .5em 1em 0em 1em;
-
-        height: 11em;
-    }
-
-    header > section:last-of-type article a img {
-        height: 8em;
-    }
-
-    header > section:last-of-type article a p {
-        text-align: center;
-        font-size: .75em;
+        margin-left: 0;
     }
 
 
@@ -1049,47 +1065,141 @@ header > section:last-of-type article a p {
 
 @media only screen and (min-width: 992px) {
 
-    header nav {
-        display: flex;
-        justify-content: space-evenly;
-        margin-bottom: .5em;
+    header {
+        background-color: var(--color-background);
+
+        display: grid;
+        grid-template-columns: 12% auto 35% auto;
+        grid-template-rows: auto auto auto;
     }
 
-    /* Hamburger menu */
 
-    header nav section:nth-of-type(2) button {
+
+
+    /*Loods 5 Logo*/
+
+    header > section:first-of-type {
+        grid-column: 1;
+        grid-row: 1;
+
+        height: 5em;
+        width: 8em;
+
+        margin: 0;
+    }
+
+
+
+
+    /*Hamburger menu*/
+
+    header nav {
+        grid-column: 2;
+        grid-row: 1;
+
+        width: auto;
+    }
+
+    header nav button {
         display: none;
     }
 
-    header nav section:nth-of-type(2) ul {
-        display: flex;
-        gap: .5em;
+    header nav button span {
+        display: none;
     }
+
+    header nav ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header nav ul li a:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--color-text);
+    }
+
+    /*Einde nav*/
+
+
 
 
     /* Zoekbalk */
 
-    header nav section:nth-of-type(3) form {
-        width: 450px;
+    header > section:nth-of-type(2) {
+        grid-column: 3;
+        grid-row: 1;
+
+        display: flex;
+        justify-content: center;
+
+        margin-left: 0;
     }
+
+    header > section:nth-of-type(2) form {
+        width: 100%;
+        max-width: 550px;
+    }
+
+
 
 
     /* Profiel, wishlist, shoppingbag */
 
-    header nav section:last-of-type {
-        margin: 0;
+    header > section:nth-of-type(3) {
+        grid-column: 4;
+        grid-row: 1;
+
+        display: flex;
+        justify-content: space-evenly;
+
+        width: 100%;
+
+        margin-left: 0;
     }
+
+
+
+
+    /*Header gekleurde balk*/
+
+    header > section:nth-of-type(4) {
+        grid-column: span 4;
+        grid-row: 2;
+    }
+
+
+
 
     /*Header scroll meubels*/
 
     header > section:last-of-type {
-        gap: 1.75em;
+        grid-row: 3;
+        grid-column: span 4;
 
-        height: 14.5em;
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        gap: 1em;
+
+        margin: .5em 1em 0em 1em;
+
+        height: 8em;
     }
 
     header > section:last-of-type article a img {
-        height: 10.5em;
+        height: 5em;
+
+        display: block;
+    }
+
+    .home header > section:last-of-type article a p {
+        text-align: center;
+        font-size: .75em;
+    }
+
+
+    .product header > section:last-of-type {
+        display: none;
     }
 
 

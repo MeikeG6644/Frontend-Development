@@ -20,7 +20,7 @@ function openMenu() {
 }
 
 // Functie uitvoeren
-var clickButtonMenu = document.querySelector("header nav section:nth-of-type(2) button");
+var clickButtonMenu = document.querySelector("header nav button");
 clickButtonMenu.addEventListener("click", openMenu);
 
 
