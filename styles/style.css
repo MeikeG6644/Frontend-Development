@@ -429,7 +429,7 @@ header > section:last-of-type article a img {
     text-transform: uppercase;
     font-size: .6em;
     font-weight: 600;
-    color: var(--color-text);
+    color:#272727;
 
     background-color: var(--color-linda);
     padding: 1em 3em;
@@ -2557,9 +2557,13 @@ header > section:last-of-type article a img {
 }
 
 
+.product main > section:last-of-type > article a p:hover {
+    background-color: #FCFCFC;
+    color: #121212;
+    border: .1px solid #FCFCFC;
 
-
-
+    transition: .25s ease-in;
+}
 
 
 }
